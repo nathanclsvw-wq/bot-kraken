@@ -19,8 +19,8 @@ logging.getLogger().addHandler(console_handler)
 
 # Configuration de l'échange Kraken
 exchange = ccxt.kraken({
-    'apiKey': 'TA_CLE_API_KRAKEN',
-    'secret': 'TA_CLE_SECRETE_KRAKEN',
+    'apiKey': 'Vhz+LZ1KFKuZv8E4vAvgDrxpO2bnhmqZl2UQlAlLi5HYSrBDV/sqV+Fm',
+    'secret': ' JE5xHOtVCzVgnMx0fzv+qBnm682tdlBo2n7ni0bRmmCQhnA097QB3RCkOI9qVEp6LRiK/1bLdlD0XGkr376zgg==',
     'enableRateLimit': True,
 })
 
