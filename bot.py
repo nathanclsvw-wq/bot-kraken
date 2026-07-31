@@ -165,6 +165,9 @@ def run_live_v7_ultimate():
 
                 # --- OBSERVABILITÉ / LOGS VOLUME ---
                 logging.info(f"Volume cumulé : {cv[-1]:.2f}")
+                logging.info(f"Volume moyen par bougie : {np.mean(V):.2f}")
+                logging.info(f"Volume max par bougie : {np.max(V):.2f}")
+                logging.info(f"Volume total historique récupéré : {np.sum(V):.2f}")
 
                 idx_l = np.where(np.diff(cv // L_VOL_TARGET) > 0)[0] + 1
                 idx_s = np.where(np.diff(cv // S_VOL_TARGET) > 0)[0] + 1
